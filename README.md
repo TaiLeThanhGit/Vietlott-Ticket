@@ -1,5 +1,5 @@
 # Vietlott-Ticket - Mega 6/45 - Power 6/55
-## _This Golang source will generates six random numbers_
+## _This Golang source will generate six random numbers_
 
 Their values are from 1 to 45 or from 1 to 55.
 And their values are not in a list of numbers that saved in a file.
