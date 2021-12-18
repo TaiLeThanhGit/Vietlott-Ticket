@@ -34,13 +34,13 @@ type ticket struct {
 }
 
 type vietLott struct {
-	vietlottType			int
-	min 					int
-	max 					int
-	numberTickets 			int
-	tickets 				[]ticket
-	unexpectedNumbersFile	string
-	unexpectedNumbers 		[]int
+	vietlottType            int
+	min                     int
+	max                     int
+	numberTickets           int
+	tickets                 []ticket
+	unexpectedNumbersFile   string
+	unexpectedNumbers       []int
 }
 
 func main() {
@@ -202,7 +202,7 @@ func (this vietLott) GenerateTicket() ticket {
 		rand.Seed(time.Now().UnixNano())
 		randNum := rand.Intn(this.max - this.min) + this.min
 		
-		if !inArray(randomTicket, randNum) {
+		if !inArray(randomTicket, randNum) && !inArray(this.unexpectedNumbers, randNum) {
 			randomTicket = append(randomTicket, randNum)
 		}
 
