@@ -1,3 +1,7 @@
+```sh
+Everything should be made as simple as possible, but not simpler (Einstein )
+```
+
 # Vietlott-Ticket - Mega 6/45 - Power 6/55
 ## _This Golang source will generate six random numbers_
 
